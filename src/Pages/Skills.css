@@ -1,0 +1,155 @@
+.skills-section {
+    padding: 3rem 0;
+    background-color: #1D1919;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  .skills-title h1 {
+    text-align: left;
+    font-size: 48px; /* Reduced for better scaling on smaller screens */
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: "Teko", sans-serif;
+    color: #FFF9E1;
+  }
+  
+  .divider {
+    border: none;
+    height: 1px;
+    background-color: #FFF9E1;
+    width: 100%;
+    margin-bottom: 2rem;
+    user-select: none;
+  }
+
+.skills-container {
+    text-align: center;
+    color: #FFF9E1;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.skills-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding: 0 6rem;
+}
+
+.skill-box {
+    border: 2px solid #F34343;
+    background-color: rgba(102, 31, 31, 0.2);
+    padding: 1rem;
+    width: 25%;
+    text-align: left;
+    border-radius: 8px;
+}
+
+.skill-box h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-family: "Teko", sans-serif;
+    font-weight: 400;
+}
+
+.skill-box p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+}
+
+
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+
+    /* Start with grayscale and no scale */
+    filter: grayscale(100%);
+    transition: filter 0.4s ease, transform 0.4s ease; /* Smooth transition for both filter and scale */
+}
+
+.icon:hover{
+    filter: grayscale(0%); /* Full color */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+
+
+.icon-svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: -1rem;
+    fill: #F34343;
+}
+
+.icon p {
+    font-size: 1rem;
+    color: #F34343;
+}
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .skills-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .skills-title {
+        font-size: 2rem;
+    }
+
+    .skill-box h2 {
+        font-size: 1.3rem;
+    }
+
+    .skill-box p {
+        font-size: 0.9rem;
+    }
+
+    .icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-title {
+        font-size: 1.8rem;
+    }
+
+    .skill-box h2 {
+        font-size: 1.1rem;
+    }
+
+    .skill-box p {
+        font-size: 0.8rem;
+    }
+
+    .icon img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .icon p {
+        font-size: 0.8rem;
+    }
+}

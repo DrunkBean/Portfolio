@@ -1,0 +1,221 @@
+/* Font imports (Teko, Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
+/* General Styling */
+.contact-section {
+  padding: 2rem 3rem;
+  background-color: #1D1919;
+  color: #FFF9E1;
+  max-width: 100%;
+}
+
+.contact-section h1 {
+    text-align: left;
+    font-size: 48px; /* Reduced for better scaling on smaller screens */
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: "Teko", sans-serif;
+    user-select: none;
+}
+
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex: 1; /* Takes up all remaining space */
+}
+
+.contact-image {
+  flex-basis: 45%;
+  text-align: center; /* Ensures image centers on smaller screens */
+  user-select: none;
+}
+
+.con-img {
+  width: auto;
+  height: auto;
+}
+
+/* Text and Contact Info */
+.contact-text {
+  flex-basis: 50%;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-family: 'Teko', sans-serif;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.highlighted-text {
+  color: #F34343;
+}
+
+.contact-social {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  transition: color 0.4s, padding 0.4s, border 0.5s;
+}
+
+.social-item:hover{
+  background-color:  rgba(102, 31, 31, 0.2);
+  border: 2px solid #F34343;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: color 0.4s, padding 0.4s, border 0.5s;
+}
+
+.social-item svg {
+  width: 24px;
+  height: 24px;
+  fill: #F34343;
+}
+
+.social-item p {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #F34343;
+  color: #FFF9E1;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Stretches across the full width */
+  overflow: hidden;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+
+/* Responsive Design */
+
+/* For larger screens */
+@media (min-width: 1200px) {
+  .contact-container {
+    padding: 2rem 10rem;
+  }
+  
+  .contact-title {
+    font-size: 48px;
+  }
+
+  .con-img {
+    max-width: 400px;
+  }
+}
+
+/* For tablets (768px to 1199px) */
+@media (max-width: 1199px) {
+  .contact-container {
+    padding: 1rem 3rem;
+    flex-direction: row;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+
+  .con-img {
+    max-width: 300px;
+  }
+}
+
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .contact-text {
+    flex-basis: 100%;
+  }
+
+  .contact-image {
+    flex-basis: 100%;
+    margin-bottom: 1.5rem; /* Adds space between image and text */
+  }
+
+  .con-img {
+    max-width: 250px;
+  }
+
+  .social-item {
+    justify-content: center;
+  }
+
+  /* Responsive Design for mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .contact-section h1 {
+      font-size: 28px;
+    }
+    
+    .contact-title {
+      padding: 0 2rem;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    .contact-image,
+    .contact-text {
+      flex-basis: 100%;
+    }
+  
+    .con-img {
+      width: 100%; /* Set image width to 100% for smaller screens */
+      height: auto; /* Adjust height automatically */
+      margin-bottom: 1rem;
+    }
+  
+    .contact-text h2 {
+      font-size: 28px;
+      text-align: center;
+      padding: 0 1rem;
+    }
+  
+    .contact-social {
+      padding: 0;
+    }
+  
+    .social p {
+      font-size: 14px;
+    }
+  }
+  
+}
