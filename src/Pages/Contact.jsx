@@ -31,15 +31,15 @@ const Contact = () => {
             </li>
             <li className="social-item">
               <IG/>
-              <p>goodest_boiiii</p>
+              <p><a href="https://www.instagram.com/goodest_boiiii/profilecard/" target="_blank">goodest_boiiii</a></p>
             </li>
             <li className="social-item">
               <FB/>
-              <p>Jeanzey Clye Romano</p>
+              <p><a href="https://www.facebook.com/profile.php?id=100083128791603&mibextid=JRoKGi" target="_blank">Jeanzey Clye Romano</a></p>
             </li>
             <li className="social-item">
               <Link/>
-              <p>Jeanzey Clye Romano</p>
+              <p><a href ="https://www.linkedin.com/in/jeanzey-clye-romano-233505252/" target="_blank">Jeanzey Clye Romano</a></p>
             </li>
           </ul>
         </div>

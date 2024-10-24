@@ -93,6 +93,19 @@
   margin: 0;
 }
 
+/*Links */
+.social-item a{
+  color: #FFF9E1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.social-item :hover{
+  color: #F34343;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* Footer */
 
 .footer {
