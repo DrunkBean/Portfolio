@@ -250,11 +250,13 @@
     }
 }
 
-/* For mobile devices (max-width: 768px) */
+/* For mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
-    .about-section h1 {
+    .home-section h1 {
         font-size: 1.8rem;
+        text-align: center;
     }
+
     .home-title{
         padding: 0 5rem;
     }
